@@ -180,7 +180,6 @@ body {
   text-transform: uppercase;
 }
 .container {
-  padding-inline: 2em;
   margin-inline: auto;
   width: min(80rem, 95%);
 }
@@ -238,9 +237,6 @@ nav {
 /* Media Queries */
 /* ---------------- */
 @media (max-width: 1024px) {
-  nav {
-    display: block;
-  }
   .nav__list {
     position: fixed;
     z-index: 1000;
@@ -279,7 +275,7 @@ nav {
 }
 @media (max-width: 35rem) {
   .nav__shopping {
-    margin-left: 8rem;
+    /* margin-left: auto; */
     gap: 1rem;
   }
 }
