@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --accent-clr: #dbf3f2;
+  --black-clr: #000000;
+  --white-clr: #ffffff;
+  --off-white: #f6f6f6;
+  --red-clr: #ff5f5f;
+  --footer-clr: #f4f8fa;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+/* ---------------- */
+/*        Reset     */
+/* ---------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+figure,
+picture {
+  margin: 0;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* Colors */
+.bg-white {
+  background-color: var(--white-clr);
+}
+.bg-accent {
+  background-color: var(--accent-clr);
+}
+.bg-dark {
+  background-color: var(--black-clr);
+}
+.bg-off-white {
+  background-color: var(--off-white);
+}
+.text-dark {
+  color: var(--black-clr);
+}
+.text__accent {
+  color: var(--accent-clr);
+}
+.text__red {
+  color: var(--red-clr);
+}
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
