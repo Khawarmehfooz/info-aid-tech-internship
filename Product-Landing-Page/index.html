@@ -5,7 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- js -->
+    <script src="./script.js" defer></script>
     <title>Product Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="nav flex justify-between align-center">
+          <div class="nav__logo uppercase fw-800">Elgato</div>
+
+          <ul
+            id="nav__list"
+            class="nav__list flex align-center"
+            data-visible="false"
+          >
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="nav__shopping flex gap-3">
+            <button class="nav__search">
+              <span class="sr-only">search</span>
+            </button>
+            <button class="nav__cart">
+              <span class="sr-only">cart</span>
+            </button>
+          </div>
+          <button
+            class="nav__hamburger d-none"
+            aria-controls="nav__list"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
