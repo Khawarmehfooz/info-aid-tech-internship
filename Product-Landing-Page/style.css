@@ -276,7 +276,7 @@ nav {
 @media (max-width: 766px) {
   .hero {
     flex-direction: column-reverse;
-    gap: 2rem;
+    /* gap: 2rem; */
   }
   .hero__right {
     width: 100%;
