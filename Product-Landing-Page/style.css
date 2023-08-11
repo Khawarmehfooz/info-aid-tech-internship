@@ -271,6 +271,7 @@ nav {
   .hero__subtitle {
     font-size: 2rem;
   }
+  
 }
 @media (max-width: 766px) {
   .hero {
@@ -279,6 +280,7 @@ nav {
   }
   .hero__right {
     width: 100%;
+    padding: 2rem;
   }
   .hero__left {
     padding-left: 1.5rem;
