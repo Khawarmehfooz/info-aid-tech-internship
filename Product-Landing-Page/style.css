@@ -199,9 +199,14 @@ body {
 /* Header */
 nav {
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav__logo {
-  font-size: clamp(2rem,2.5rem,4rem);
+  font-size: clamp(2rem, 2.5rem, 4rem);
+  text-transform: uppercase;
+  font-weight: 800;
 }
 .nav__logo:hover,
 .nav__link:hover {
@@ -209,11 +214,18 @@ nav {
 }
 .nav__list {
   gap: 6rem;
+  display: flex;
+  align-items: center;
 }
 .nav__link {
   font-weight: 600;
   color: var(--bs-dark);
   font-size: 1.125rem;
+}
+.nav__shopping {
+  display: flex;
+  align-items: cetner;
+  gap: 3rem;
 }
 .nav__search,
 .nav__cart,
@@ -225,6 +237,7 @@ nav {
   background-position: center;
   background-color: transparent;
   background-size: 1.5rem;
+  cursor: pointer;
 }
 .nav__search {
   background-image: url(./assets/shared/icon-search.svg);
@@ -262,7 +275,6 @@ nav {
     background-image: url(./assets/shared/icon-hamburger.svg);
     display: block;
     z-index: 1000;
-    cursor: pointer;
   }
   .nav__hamburger[aria-expanded="true"] {
     background-image: url(./assets/shared/icon-close.svg);
