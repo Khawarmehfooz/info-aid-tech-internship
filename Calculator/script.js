@@ -8,6 +8,9 @@ button.map((button) => {
                 display.innerText = "";
                 break;
             case "DEL":
+                if(display.innerText == ""){
+                    break;
+                }
                 if (display.innerText) {
                     display.innerText = display.innerText.slice(0, -1);
                     break;
