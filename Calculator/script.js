@@ -17,7 +17,8 @@ button.map((button) => {
                 }
             case "=":
                 try {
-                    display.innerText = eval(display.innerText);
+                    result = eval(display.innerText);
+                    display.innerText = result.toFixed(2);
                 } catch {
                     display.innerText = "Math Error!";
                 }
