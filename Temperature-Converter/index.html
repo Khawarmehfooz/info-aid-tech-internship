@@ -9,5 +9,36 @@
     <script src="./script.js" defer></script>
     <title>Temperature Converter</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="title">Temperature Converter</h1>
+      <article>
+        <form action="" name="temp-form">
+          <fieldset class="form-group">
+            <label for="temp-input">Enter Temperature in Celcius</label>
+            <input type="number" name="" required id="temp-input" />
+          </fieldset>
+          <div class="flex">
+            <div class="col">
+              <fieldset class="form-group">
+                <h2>Select Unit</h2>
+                <div class="input-group">
+                  <input type="radio" name="temp-output" value="f" id="f" />
+                  <label for="f">Fahrenheit</label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="temp-output" value="k" id="k" />
+                  <label for="k">Kelvin</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col output-group d-none" id="output-group">
+              <h2>Output</h2>
+              <p id="output-value"></p>
+            </div>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
